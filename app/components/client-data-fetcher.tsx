@@ -11,9 +11,7 @@ export default function DataFetcher() {
     setLoading(true);
     try {
       // Replace this URL with the actual endpoint you want to call
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/py/helloFastApi`
-      );
+      const response = await fetch(`http://localhost:8000/api/py/helloFastApi`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
