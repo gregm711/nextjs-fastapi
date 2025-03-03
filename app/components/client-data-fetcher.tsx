@@ -66,7 +66,7 @@ export default function DataFetcher() {
           <h3>Response Data:</h3>
           <div className="result-card">
             {Object.entries(result).map(([key, value]) => (
-              <div key={key} className="result-item">
+              <div key={key} className="result-item text-black">
                 <strong>{key}:</strong> {JSON.stringify(value, null, 2)}
               </div>
             ))}
